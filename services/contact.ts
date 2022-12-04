@@ -4,15 +4,10 @@ interface Props {
   subject : string;
 }
 
-const server_url = 'https://portfolio-server-97.herokuapp.com'
-
-const isProduction = process.env.NODE_ENV === 'production'
-
-export const createContactRequest = async ({email, message, subject}:Props) => {
-  const base_url = isProduction ? server_url : 'http://localhost:3000'
+export const createContactRequest = async ({email, message, subject}: Props) => {
 
   try {
-    const url = `${base_url}/api/contact`
+    const url = '/api/contact'
     const res = await fetch(url, {
       method: 'POST',
       headers: {
