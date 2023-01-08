@@ -49,3 +49,32 @@
     @apply mb-0
   }
 }
+
+/* animations */
+
+.rotate {
+  animation: 30s linear infinite rotate;
+  will-change: transform;
+}
+
+.rotate-reverse {
+  animation: 30s linear infinite rotateReverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateReverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

@@ -36,12 +36,12 @@ export const UIProvider: FC<Props> = ({children}) => {
     if( theme === 'dark' ) {
       const html = document.querySelector('html')
       html?.setAttribute('class', 'dark')
-      setState({...state, theme})
+      setState( prevState => ({...prevState, theme}))
     }
-
+    
     if( theme === 'light' ) {
       document.querySelector('html')?.classList.remove('dark')
-      setState({...state, theme})
+      setState( prevState => ({...prevState, theme}))
     }
   }, [])
 

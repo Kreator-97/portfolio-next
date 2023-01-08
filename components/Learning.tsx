@@ -1,6 +1,10 @@
+import { useContext } from 'react'
+import { UIContext } from '../context/ui'
 import { IconWithText } from './'
 
 export const Learning = () => {
+  const { theme } = useContext(UIContext)
+
   return (
     <div id='learning' className='pt-8 md:pt-20'>
       <h2 className="heading">Aprendizaje</h2>
@@ -23,7 +27,11 @@ export const Learning = () => {
 
         <div className='custom-container'>
           <div className="flex justify-center py-8">
-            <IconWithText iconURL={'/icons/english.svg'} title='Inglés' size={36}/>
+            <IconWithText
+              iconURL={ theme === 'dark' ? '/icons/english-light.svg' : '/icons/english-dark.svg' }
+              title='Inglés'
+              size={36}
+            />
           </div>
           <p className="paragraph">
             Me encuentro aprendiendo inglés para tener las capacidades suficientes para comunicarme eficientemente con hablantes nativos del idioma y con el equipo de desarrollo.

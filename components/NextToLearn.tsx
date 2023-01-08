@@ -5,17 +5,40 @@ export const NextToLearn = () => {
     <div className='pt-8 md:pt-20'>
       <h2 className='heading'>Por aprender en un futuro</h2>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+      <div className='grid grid-cols-1 gap-4'>
         <div className="custom-container col-span-1 md:col-span-2">
           <p className="paragraph">
             Gran parte de mi tiempo está dedicado a aprender nuevas tecnologías y mantenerme actualizado.
           </p>
           <p className="paragraph">
-            Estoy abierto a aprender y adaptarme a cualquier stack o requerimiento que sea necesario, pero de forma personal hay algunas herramientas y tecnologías que me interesan aprender en un futuro ya sea para propósitos personales o laborales. Algunas de ellas son las siguientes:
+            Estoy abierto a aprender y adaptarme a cualquier stack o requerimiento que sea necesario, pero de forma personal hay algunas herramientas y tecnologías que me interesan aprender en un futuro ya sea para propósitos personales o laborales. <strong>Algunas tecnologías que me interesan aprender:</strong>
           </p>
         </div>
 
-        <div className="custom-container">
+        <div className='w-full bg-accent rounded-full aspect-square my-16 mx-auto max-w-[360px] relative rotate'>
+          <div
+            className='w-full bg-[#CED7FE] dark:bg-[#2A282B] rounded-full aspect-square mx-auto max-w-[360px] scale-95'>
+          </div>
+
+          <div className='absolute -top-8 left-[calc(50%-60px)] rotate-reverse'>
+            <IconWithText size={64} title="Rust" iconURL={'/icons/rust.svg'} hasBackground/>
+          </div>
+
+          <div className='absolute top-[calc(50%-40px)] -right-12 rotate-reverse'>
+            <IconWithText size={64} title="React Native" iconURL={'/icons/react-native.svg'} hasBackground/>
+          </div>
+
+          <div className='absolute -bottom-12 left-[calc(50%-60px)] rotate-reverse'>
+            <IconWithText size={64} title="Dart" iconURL={'/icons/dart.svg'} hasBackground/>
+          </div>
+
+          <div className='absolute top-[calc(50%-40px)] -left-12 rotate-reverse'>
+            <IconWithText size={64} title="NestJS" iconURL={'/icons/nestjs.svg'} hasBackground/>
+          </div>
+
+        </div>
+
+        {/* <div className="custom-container">
           <div className='flex justify-center pt-8 pb-4'>
             <IconWithText title="Rust" iconURL={'/icons/rust.svg'} hasBackground/>
 
@@ -27,7 +50,7 @@ export const NextToLearn = () => {
 
         <div className="custom-container">
           <div className='flex justify-center py-8'>
-            <IconWithText title="React Native" iconURL={'/icons/rust.svg'} hasBackground/>
+            <IconWithText title="React Native" iconURL={'/icons/react-native.svg'} hasBackground/>
           </div>
           <p className="paragraph">
           Quiero llevar el desarrollo de aplicaciones hechas en React al siguiente nivel y a un nuevo terreno. Esto se puede lograr con React Native para la creación de aplicaciones móviles multiplataforma. 
@@ -60,7 +83,7 @@ export const NextToLearn = () => {
           <p className="paragraph">
             NestJS es un framework para aplicaciones del servidor, basado en Express y con soporte incluido para TypeScript.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   )
