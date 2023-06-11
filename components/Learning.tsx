@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+
 import { UIContext } from '../context/ui'
 import { IconWithText } from './'
 
@@ -18,14 +19,22 @@ export const Learning = () => {
 
         <div className='custom-container'>
           <div className="flex justify-center py-8">
-            <IconWithText iconURL={'/icons/docker.svg'} title='Docker' size={36}/>
+            <IconWithText iconURL={'/icons/php.svg'} title='PHP' size={36}/>
           </div>
           <p className="paragraph">
-            Estoy aprendiendo docker para hacer despliegues de contenedores en la nube utilizando servicios de cloud computing, como AWS o Google Cloud Platform, también para tener la bases suficientes para comprender e implementar la arquitectura de microservicios.
+            PHP es uno de los lenguajes más importantes en el desarrollo web y posee una gran comunidad y herramientas que permiten resolver las necesidades de los clientes de forma fácil. Me estoy involucrando en esta gran comunidad aprendiendo las bases del lenguaje para después comenzar a probar herramientas más complejas que faciliten el desarrollo de nuevos proyectos.
+          </p>
+        </div>
+        <div className='custom-container'>
+          <div className="flex justify-center py-8">
+            <IconWithText iconURL={'/icons/nestjs.svg'} title='NESTJS' size={36}/>
+          </div>
+          <p className="paragraph">
+            Este es el framework de JavaScript/TypeScript que no sabia que necesitaba. Ofrece una gran cantidad de soluciones para crear aplicaciones del servidor escalables junto a una muy buena experiencia de desarrollo. Sin duda es una gran herramienta que me está ayudando a mejorar como desarrollador, pues a la vez que se aprende NestJS aprendes escribir código limpio.
           </p>
         </div>
 
-        <div className='custom-container'>
+        <div className='custom-container col-span-2'>
           <div className="flex justify-center py-8">
             <IconWithText
               iconURL={ theme === 'dark' ? '/icons/english-light.svg' : '/icons/english-dark.svg' }
@@ -34,7 +43,7 @@ export const Learning = () => {
             />
           </div>
           <p className="paragraph">
-            Me encuentro aprendiendo inglés para tener las capacidades suficientes para comunicarme eficientemente con hablantes nativos del idioma y con el equipo de desarrollo.
+            El Inglés es una habilidad muy importante ya que te permite comunicarte que gente asombrosa de muchos lugares. Aprender un nuevo idioma expande tu forma de pensar en cierta medida y por eso estoy dedicando una gran parte de mi tiempo en mejorar y aprender más sobre este idioma.
           </p>
         </div>
       </div>

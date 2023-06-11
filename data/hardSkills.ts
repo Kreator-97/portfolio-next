@@ -1,6 +1,5 @@
 export const webTecnologies = [
-  'Máquetación de sitios',
-  'Diseño web',
+  'Máquetación y diseño de sitios web',
   'Buenas prácticas siguiendo la métodologia de Responsive Web Design',
   'Manipulación del DOM y dominio de peticiones asíncronas con JS',
 ]
@@ -14,6 +13,7 @@ export const reactEcosystem = [
 export const typeScriptSkills = [
   'Manejo eficiente en el sistema de tipos',
   'Buenas prácticas de desarrollo usando TypeScript',
+  'Código limpio, mantenible y escalable'
 ]
 
 export const serverSideSkills = [
@@ -22,7 +22,13 @@ export const serverSideSkills = [
   'Creación de aplicaciones web rápidas y optimizadas usando NextJS',
 ]
 
+export const shopifySkills = [
+  'Creación y personalización de temas',
+  'Creación de sitios altamente personalizables y accesibles',
+  'Creación de aplicaciones de Shopify privadas' 
+]
 
-
-
-
+export const dockerSkills = [
+  'Dockerizar aplicaciones de Node.js',
+  'Manejo de distintos ambientes (production, development, testing)'
+]

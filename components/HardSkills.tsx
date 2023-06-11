@@ -1,5 +1,12 @@
 import { Card, IconWithText, List } from './'
-import { reactEcosystem, serverSideSkills, typeScriptSkills, webTecnologies } from '../data'
+import {
+  dockerSkills,
+  reactEcosystem,
+  serverSideSkills,
+  shopifySkills,
+  typeScriptSkills,
+  webTecnologies
+} from '../data'
 
 export const HardSkills = () => {
   return (
@@ -17,7 +24,7 @@ export const HardSkills = () => {
             <IconWithText iconURL={'/icons/javascript.svg'} title='JavaScript' />
           </div>
 
-          <h3 className='text-dark dark:text-light text-center text-lg font-bold mb-2'>Tareas realizables:</h3>
+          <h3 className='text-dark dark:text-light text-center text-lg font-bold mb-2'>Competente en:</h3>
 
           <List items={ webTecnologies } />
         </Card>
@@ -32,7 +39,7 @@ export const HardSkills = () => {
             <IconWithText iconURL={'/icons/nextjs.svg'} title='NextJS' />
           </div>
           
-          <h3 className='text-dark dark:text-light text-center text-lg font-bold mb-2'>Proeficiente en:</h3>
+          <h3 className='text-dark dark:text-light text-center text-lg font-bold mb-2'>Competente en:</h3>
 
           <List items={ reactEcosystem } />
         </Card>
@@ -45,7 +52,7 @@ export const HardSkills = () => {
             <IconWithText iconURL={'/icons/typescript.svg'} title='TypeScript' />
           </div>
 
-          <h3 className='text-dark dark:text-light text-center text-lg font-bold mb-2'>Proeficiente en:</h3>
+          <h3 className='text-dark dark:text-light text-center text-lg font-bold mb-2'>Competente en:</h3>
         
           <List items={ typeScriptSkills } />
         </Card>
@@ -60,9 +67,35 @@ export const HardSkills = () => {
             <IconWithText iconURL={'/icons/graphql.svg'} title='GraphQL' />
           </div>
 
-          <h3 className='text-dark dark:text-light text-center text-lg font-bold mb-2'>Proeficiente en:</h3>
+          <h3 className='text-dark dark:text-light text-center text-lg font-bold mb-2'>Competente en:</h3>
 
           <List items={ serverSideSkills } />
+        </Card>
+
+        <Card
+          title='Docker'
+          description='Utilizo docker a nivel básico - intermedio para tener separado mis entornos de desarrollo. Sigo estudiándolo para comenzar a utilizar la arquitectura de microservicios.'
+        >
+          <div className='py-4 flex gap-8 justify-center'>
+            <IconWithText iconURL={'/icons/docker.svg'} title='Docker' />
+          </div>
+          
+          <h3 className='text-dark dark:text-light text-center text-lg font-bold mb-2'>Competente en:</h3>
+
+          <List items={ dockerSkills } />
+        </Card>
+
+        <Card
+          title='Shopify'
+          description='Tengo experiencia profesional desarrollando soluciones de comercio electrónico para clientes que utilizan la plataforma de Shopify para su modelo de negocio.'
+        >
+          <div className='py-4 flex gap-8 justify-center'>
+            <IconWithText iconURL={'/icons/shopify.svg'} title='shopify' />
+          </div>
+          
+          <h3 className='text-dark dark:text-light text-center text-lg font-bold mb-2'>Competente en:</h3>
+
+          <List items={ shopifySkills } />
         </Card>
 
         <div className='col-span-1 md:col-span-2'>

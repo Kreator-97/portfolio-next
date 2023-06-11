@@ -11,7 +11,7 @@ export const NextToLearn = () => {
             Gran parte de mi tiempo está dedicado a aprender nuevas tecnologías y mantenerme actualizado.
           </p>
           <p className="paragraph">
-            Estoy abierto a aprender y adaptarme a cualquier stack o requerimiento que sea necesario, pero de forma personal hay algunas herramientas y tecnologías que me interesan aprender en un futuro ya sea para propósitos personales o laborales. <strong>Algunas tecnologías que me interesan aprender:</strong>
+            Tengo la habilidad de aprender y adaptarme a cualquier stack o requerimiento que sea necesario, aunque de forma personal hay algunas herramientas y tecnologías que me interesan aprender en un futuro ya sea para propósitos personales o laborales. <strong>Algunas tecnologías que me interesan aprender:</strong>
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export const NextToLearn = () => {
           </div>
 
           <div className='absolute top-[calc(50%-40px)] -left-12 rotate-reverse'>
-            <IconWithText size={64} title="NestJS" iconURL={'/icons/nestjs.svg'} hasBackground/>
+            <IconWithText size={64} title="Python" iconURL={'/icons/python.svg'} hasBackground/>
           </div>
 
         </div>
