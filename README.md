@@ -1,3 +1,5 @@
+# Translations in progress
+
 # Ven y conóceme!
 Este es el repositorio de mi sitio personal, cualquier duda, sugerencia, o comentario será bienvenido.
 
