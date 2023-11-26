@@ -4,9 +4,7 @@ import { Footer, Header, Main, Meta, Navbar, Sidebar } from '../components'
 export default function Home() {
   return (
     <div className="App mx-auto" id='home'>
-      <Head>
-        <Meta />
-      </Head>
+      <Meta />
       <Navbar />
       <Header />
 
