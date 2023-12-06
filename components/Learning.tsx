@@ -34,7 +34,7 @@ export const Learning = () => {
           </p>
         </div>
 
-        <div className='custom-container col-span-2'>
+        <div className='custom-container md:col-span-2'>
           <div className="flex justify-center py-8">
             <IconWithText
               iconURL={ theme === 'dark' ? '/icons/english-light.svg' : '/icons/english-dark.svg' }

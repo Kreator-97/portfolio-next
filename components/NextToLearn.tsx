@@ -2,7 +2,7 @@ import { IconWithText } from './'
 
 export const NextToLearn = () => {
   return (
-    <div className='pt-8 md:pt-20'>
+    <div className='pt-8 md:pt-20 hidden lg:block'>
       <h2 className='heading'>Por aprender en un futuro</h2>
 
       <div className='grid grid-cols-1 gap-4'>
